@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Panoply Consultancy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    
+    <!-- IncludeSmooth Scroll-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+<!--Navigation-->
+    <div class="w3-top">
+      <div class="w3-bar w3-dark-grey w3-opacity-min">
+        <span class="branding w3-bar-item w3-mobile">Panoply Consultancy</span>
+        <span class="w3-right w3-mobile">
+          <a class="w3-bar-item w3-button w3-mobile w3-hover-indigo" href="#home" >Home</a>
+          <a class="w3-bar-item w3-button w3-mobile w3-hover-indigo" href="#about" >About</a>
+          <a class="w3-bar-item w3-button w3-mobile w3-hover-indigo" href="#services" >Services</a>
+          <a class="w3-bar-item w3-button w3-mobile w3-hover-indigo" href="#contact" >Contact</a>
+        </span>
+      </div>
+    </div>
+
+<!--Showcase-->
+    <section class="showcase" id="home">
+      <div class="w3-container w3-center">
+        <h1 class="w3-animate-opacity">Consulting Reimagined</h1>
+        <br><hr><br>
+        <h2 class="w3-animate-opacity">Aviation. Defence. Beyond...</h2>
+        <br>
+        <button onclick="document.getElementById('modal-pop').style.display='block'" class="w3-button w3-indigo w3-large">Talk to Us</button>
+      </div>
+    </section>
+
+  <!--About-->
+  <section class="section" id="about">
+    <div class="w3-container">
+      <div class="w3-row-padding">
+        <div class="w3-col m5">
+          <img src="img/team.jpg">
+        </div>
+        <div class="w3-col m7">
+          <h2 class="w3-text-indigo">Experience End-to-End Support</h2>
+          <p>The heavily regulated and process-oriented environment of MENA requires customer engagement solutions. Our understanding of the regional processes and requirements helps us serve you efficiently through all your needs:</p>
+        
+        <!--Accordion1-->
+          <button onclick="accFunction('businessDev')" class="w3-button w3-block w3-left-align w3-indigo w3-hover-amber">
+             Business Development
+          </button>
+
+          <div id="businessDev" class="w3-container w3-hide">
+            <p>Our method of bespoke Business Development involves a comprehensive study of your business structure and processes to formulate tailor-made winning strategies. We identify strategies that assure the ideal positioning for your brand, products, and services helping you to build enduring relationships with your clients and develop organizational stability for your business.</p>
+          </div>
+
+        <!--Accordion2-->
+          <button onclick="accFunction('sales')" class="w3-button w3-block w3-left-align w3-indigo w3-hover-amber">
+             Sales and Marketing
+          </button>
+
+          <div id="sales" class="w3-container w3-hide">
+            <p>Our experts take a deep dive into your business in order to analyse key factors to determine an effective sales and marketing strategy. Right from understanding your space, identifying competitors, predicting trends to the feasibility of your endeavours – every detail of the strategy is worked out before conceptualizing a solution.</p>
+          </div>
+
+        <!--Accordion3-->
+          <button onclick="accFunction('advisory')" class="w3-button w3-block w3-left-align w3-indigo w3-hover-amber">
+            Technical Advisory and Pre-Qualification
+          </button>
+
+          <div id="advisory" class="w3-container w3-hide">
+            <p>We provide a swift and simplified process of regional qualification. Our responsibility is to ensure that your product offering is tested and certified as per regional standards. We liaison with authorizing bodies and ministries to eliminate any potential roadblocks on your journey to establishing your business.</p>
+          </div>
+
+           <!--Accordion4-->
+          <button onclick="accFunction('projectManagement')" class="w3-button w3-block w3-left-align w3-indigo w3-hover-amber">
+             Project Management
+          </button>
+
+          <div id="projectManagement" class="w3-container w3-hide">
+            <p>Every project requires a systematic approach for a seamless execution. We address your needs from setting up timelines, milestones, managing resources and deliverables, all the way to the point of execution. Our team ensures close tracking of deliverables for timely fulfilment of the agreed objectives.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Services-->
+  <section class="section" id="services">
+    <div class="w3-container w3-center">
+        <h2 class="w3-text-indigo">Our Areas of Focus</h2>
+        <p>Aviation and Defence are the core markets we address. We also have ambitious growth plans in the area of Management Consultancy, to offer a wider scope of services and industries.</p>
+    </div>
+  
+    <div class="w3-container w3-center">
+      <div class="w3-row">
+        <di class="w3-col m4">
+          <i class="fas fa-fighter-jet fa-7x w3-text-indigo"></i>
+          <h3 class="w3-text-indigo">Aviation and Defence Consulting</h3>
+        </di>
+
+        <di class="w3-col m4">
+          <i class="fas fa-heartbeat fa-7x w3-text-indigo"></i>
+          <h3 class="w3-text-indigo">Healthcare</h3>
+        </di>
+
+        <di class="w3-col m4">
+          <i class="fas fa-building fa-7x w3-text-indigo"></i>
+          <h3 class="w3-text-indigo">Real Estate</h3>
+        </di>
+
+      </div>
+    </div>
+  </section>
+
+<!--Contact-->
+  <section class="section w3-black" id="contact">
+    <div class="w3-container w3-center">
+        <h2>Where we are</h2>
+        <p>HEADQUARTERS, DUBAI</p>
+    </div>
+  </section>
+  <!--Contact-->
+    <section class="section">
+      <div class="w3-container">
+        <div class="w3-card-4">
+          <div class="w3-container w3-indigo">
+            <h2>Contact Us</h2>
+          </div>
+          <form class="w3-container w3-padding-large">
+          <label class="w3-label">Name</label>
+          <input class="w3-input" type="text">
+          <label class="w3-label">Email</label>
+          <input class="w3-input" type="text">
+          <label class="w3-label">Message</label>
+          <br>
+          <textarea class="w3-input w3-border"
+          style="resize:none;" type="text"></textarea>
+          <button type="submit" class="w3-button w3-indigo w3-hover-black">Submit</button>
+          <br><br>
+          </form>
+          </div>
+      </div>
+    </section>
+
+<footer class="w3-black w3-padding -xlarge w3-center">
+  <p>&copy; 2017 | Panoply Consultancy</p>
+</footer>
+
+
+<!--Modal Popup-->
+<div id="modal-pop" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <header class="w3-container w3-indigo">
+      <span class="w3-button w3-hover-white w3-display-topright" onclick="document.getElementById('modal-pop').style.display='none'">&times;</span>
+      <h2>Send Us Email</h2>
+    </header>
+
+      <div class="w3-container">
+          <form>
+              <div class="w3-section">
+                <label class="w3-label">Name</label>
+                <input class="w3-input" type="text">
+                <label class="w3-label">Email</label>
+                <input class="w3-input" type="text">
+                <label class="w3-label">Message</label>
+                <br>
+                <textarea class="w3-input w3-border" style="resize:none;" type="text"></textarea>
+    
+                <button class="w3-indigo w3-block w3-section w3-button w3-padding w3-hover-black">Submit</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+<script src="script.js"> </script>
+  
+
+  </body>
+</html>
